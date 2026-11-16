@@ -1,0 +1,14 @@
+{
+  "name": "inventory-service",
+  "version": "1.0.0",
+  "description": "Inventory Tracking Service for Global Logistics Partners",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

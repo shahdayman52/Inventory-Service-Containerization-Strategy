@@ -1,0 +1,9 @@
+# Assignment brief and reference files (not part of the submission)
+assignment_docs/
+
+# Submission archive
+*.zip
+
+# OS and dependency artifacts
+.DS_Store
+node_modules/

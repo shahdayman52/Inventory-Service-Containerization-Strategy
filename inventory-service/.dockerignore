@@ -1,0 +1,18 @@
+# .dockerignore: keep files out of the build context so they never reach the image.
+# This avoids image bloat and keeps secrets and local artifacts out of the attack surface.
+
+# Dependencies are installed inside the image by "RUN npm install"; never copy local ones.
+node_modules
+npm-debug.log*
+
+# Version control metadata is not needed at runtime.
+.git
+.gitignore
+
+# Environment files may contain secrets.
+.env
+.env.*
+
+# Build definition files are read by dockerd but are not needed inside the image.
+Dockerfile
+.dockerignore
